@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "name": "Chatbot AI Agent",
+    "slug": "chatbot-ai-agent",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light"
+  }
+}

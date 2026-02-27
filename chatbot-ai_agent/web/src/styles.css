@@ -1,0 +1,122 @@
+:root {
+  font-family: Segoe UI, sans-serif;
+  color: #111827;
+  background: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  border-right: 1px solid #e5e7eb;
+  background: #ffffff;
+  padding: 16px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar button {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar .active {
+  background: #e0e7ff;
+  border-color: #818cf8;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.chat {
+  padding: 24px;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 16px;
+}
+
+.chat h1 {
+  margin: 0;
+}
+
+.messages {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.msg {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.msg.user {
+  background: #dbeafe;
+}
+
+.msg.assistant {
+  background: #f3e8ff;
+}
+
+.empty {
+  color: #6b7280;
+}
+
+.composer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
+.composer input,
+.composer button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.composer button {
+  background: #111827;
+  color: white;
+  cursor: pointer;
+}
+
+.error {
+  color: #b91c1c;
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
